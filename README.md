@@ -32,18 +32,7 @@ Es läuft vollständig offline, speichert keine Daten extern und sammelt keine N
 
 ## 2. Installation und Nutzung
 
-Svenbot kann entweder direkt über die mitgelieferte EXE-Datei gestartet oder manuell mit PyInstaller kompiliert werden.
-
-### Option A: Nutzung der bereitgestellten EXE
-
-1. Lade die Datei `Svenbot.exe` aus dem GitHub-Release herunter.  
-2. Starte sie über die Windows-Konsole oder per Doppelklick:
-3. Einige Funktionen benötigen Administratorrechte.  
-Es wird empfohlen, die EXE mit "Als Administrator ausführen" zu starten.
-
----
-
-### Option B: Eigenständige Erstellung mit PyInstaller
+Eigenständige Erstellung mit PyInstaller
 
 #### Voraussetzungen:
 - Python 3.10 oder neuer
