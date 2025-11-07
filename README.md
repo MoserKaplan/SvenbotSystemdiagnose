@@ -23,7 +23,7 @@ Da viele Antiviren-Engines heuristisch bewerten („verhält sich wie ein Passwo
 1. Öffne den Quellcode (`sve6.0.py`) in einem Editor.
 2. Überprüfe, dass **keine Netzwerkanfragen** außer `netsh`, `wmic` oder PowerShell-Lokalbefehlen vorkommen.
 3. Starte das Script nur **auf deinem eigenen System**.
-4. 
+
 ---
 
 ## 1. Sinn und Funktion
