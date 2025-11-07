@@ -7,6 +7,23 @@ Ein offline-basiertes Windows-11-Diagnose- und Sicherheitsanalyse-Tool.
 Ziel: Das Verhalten von Windows verstehen, typische Angriffsmuster nachvollziehen und Sicherheit praktisch begreifen.  
 Der gesamte Code wurde vollständig mit ChatGPT erstellt.
 
+### Hinweis zu Virenscans und Falschmeldungen
+
+Einige Virenscanner oder Plattformen wie VirusTotal können **Svenbot** fälschlicherweise als Schadsoftware einstufen.
+Das liegt **nicht** an bösartigem Verhalten, sondern an den verwendeten Funktionen:
+
+- Das Skript liest System-, Registry- und Prozessdaten aus, ähnlich wie legitime Forensik- oder Security-Tools.
+- Es liest gespeicherte Browser-Passwörter (nur lokal, verschlüsselt, ohne Upload).
+- Es prüft Netzwerke, Ports und Autostarts, was typischen Malware-Heuristiken ähnelt.
+- **Keine externen Verbindungen oder Datenübertragungen** finden statt – sämtliche Analysen laufen vollständig **offline**.
+
+Da viele Antiviren-Engines heuristisch bewerten („verhält sich wie ein Passwort-Stealer“), führt das oft zu Fehlalarmen.
+
+**Wenn du das Projekt selbst prüfen willst:**
+1. Öffne den Quellcode (`sve6.0.py`) in einem Editor.
+2. Überprüfe, dass **keine Netzwerkanfragen** außer `netsh`, `wmic` oder PowerShell-Lokalbefehlen vorkommen.
+3. Starte das Script nur **auf deinem eigenen System**.
+4. 
 ---
 
 ## 1. Sinn und Funktion
